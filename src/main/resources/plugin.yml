@@ -1,0 +1,4 @@
+name: PServerPlus
+version: '${project.version}'
+main: fr.plhume.pserverplus.PServerPlus
+api-version: '1.19'
