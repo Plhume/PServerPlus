@@ -1,7 +1,7 @@
 package fr.plhume.pserverplus.commands;
 
 import fr.plhume.pserverplus.PServerPlus;
-import net.kyori.adventure.text.Component;
+import fr.plhume.pserverplus.modules.PlayerModules;
 import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -24,6 +24,15 @@ public class FlyCommands implements CommandExecutor, TabExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String msg, @NotNull String[] args) {
         if (cmd.getName().equalsIgnoreCase("fly")) {
+            if (!PlayerModules.flyModule()) {
+                sender.sendMessage(MiniMessage.miniMessage().deserialize(
+                        Objects.requireNonNull(
+                                plugin.getConfig().getString("messages.module-disabled")
+                        )
+                ));
+                return true;
+            }
+
             if (sender instanceof Player player) {
                 if (args.length == 0) {
                     if (player.hasPermission("pserverplus.fly") || player.hasPermission("pserverplus.admin")) {

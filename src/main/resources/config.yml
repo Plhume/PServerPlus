@@ -1,8 +1,15 @@
 prefix: "<red>[PServerPlus]</red> "
 
+# Modules allow you to activate or deactivate what you want.
+modules:
+  fly: false
+  join-leave: true
+  first-join: true
+
 messages:
   no-permission: "<red>Vous n'avez pas la permission d'effectuer cette commande !</red>"
   no-console: "<red>Vous ne pouvez pas effectuer cette commande depuis la console !</red>"
+  module-disabled: "<red>Ce module est désactivé !</red>"
 
   player-not-found: "<red>Le joueur</red> <white>%player%</white> <red>n'a pas été trouvé !</red>"
 
