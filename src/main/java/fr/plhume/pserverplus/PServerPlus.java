@@ -1,5 +1,6 @@
 package fr.plhume.pserverplus;
 
+import fr.plhume.pserverplus.commands.FlyCommands;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -25,6 +26,10 @@ public final class PServerPlus extends JavaPlugin {
 
     public static PServerPlus getInstance() {
         return instance;
+    }
+
+    private void registerCommands() {
+        Objects.requireNonNull(getCommand("fly")).setExecutor(new FlyCommands());
     }
 
     public String getPrefix() {

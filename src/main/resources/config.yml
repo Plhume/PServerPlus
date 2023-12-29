@@ -1,2 +1,12 @@
 prefix: "<red>[PServerPlus]</red> "
 
+messages:
+  no-permission: "<red>Vous n'avez pas la permission d'effectuer cette commande !</red>"
+  no-console: "<red>Vous ne pouvez pas effectuer cette commande depuis la console !</red>"
+
+  player-not-found: "<red>Le joueur</red> <white>%player%</white> <red>n'a pas été trouvé !</red>"
+
+  fly-enabled: "<gold>Le vol est maintenant</gold> <green>activé</green> <gold>!</gold>"
+  fly-disabled: "<gold>Le vol est maintenant</gold> <red>désactivé</red> <gold>!</gold>"
+  enable-fly-other: "<gold>Le vol de</gold> <white>%player%</white> <gold>est maintenant</gold> <green>activé</green> <gold>!</gold>"
+  disable-fly-other: "<gold>Le vol de</gold> <white>%player%</white> <gold>est maintenant</gold> <red>désactivé</red> <gold>!</gold>"
