@@ -2,6 +2,8 @@ package fr.plhume.pserverplus;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.util.Objects;
+
 public final class PServerPlus extends JavaPlugin {
 
     private static PServerPlus instance;
@@ -24,5 +26,8 @@ public final class PServerPlus extends JavaPlugin {
     public static PServerPlus getInstance() {
         return instance;
     }
+
+    public String getPrefix() {
+        return Objects.requireNonNull(getConfig().getString("prefix"));
     }
 }
