@@ -6,12 +6,15 @@ public final class PServerPlus extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        getLogger().info("PServerPlus by Plhume");
 
+
+        getLogger().info("Plugin enabled!");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        getLogger().info("Plugin disabled!");
+    }
     }
 }
