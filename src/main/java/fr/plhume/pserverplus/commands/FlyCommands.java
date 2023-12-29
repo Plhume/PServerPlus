@@ -62,7 +62,7 @@ public class FlyCommands implements CommandExecutor, TabExecutor {
 
                 if (target == null) {
                     sender.sendMessage(MiniMessage.miniMessage().deserialize(
-                            (prefix + plugin.getConfig().getString("messages.player-not-found")).replace("%player%", args[0])
+                            prefix + (plugin.getConfig().getString("messages.player-not-found")).replace("%player%", args[0])
                     ));
 
                     return true;
@@ -75,7 +75,7 @@ public class FlyCommands implements CommandExecutor, TabExecutor {
                             prefix + plugin.getConfig().getString("messages.fly-disabled")
                     ));
                     sender.sendMessage(MiniMessage.miniMessage().deserialize(
-                            (prefix + plugin.getConfig().getString("messages.fly-disabled-other")).replace("%player%", target.getName())
+                            prefix + (plugin.getConfig().getString("messages.fly-disabled-other")).replace("%player%", target.getName())
                     ));
                 } else {
                     target.setFlying(true);
@@ -84,7 +84,7 @@ public class FlyCommands implements CommandExecutor, TabExecutor {
                             prefix + plugin.getConfig().getString("messages.fly-enabled")
                     ));
                     sender.sendMessage(MiniMessage.miniMessage().deserialize(
-                            (prefix + plugin.getConfig().getString("messages.fly-enabled-other")).replace("%player%", target.getName())
+                            prefix + (plugin.getConfig().getString("messages.fly-enabled-other")).replace("%player%", target.getName())
                     ));
                 }
 
