@@ -10,6 +10,7 @@ public final class PServerPlus extends JavaPlugin {
     public void onEnable() {
         getLogger().info("PServerPlus by Plhume");
 
+        saveDefaultConfig();
         instance = this;
 
         getLogger().info("Plugin enabled!");
