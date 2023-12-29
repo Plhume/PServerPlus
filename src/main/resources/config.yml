@@ -13,6 +13,12 @@ messages:
 
   player-not-found: "<red>Le joueur</red> <white>%player%</white> <red>n'a pas été trouvé !</red>"
 
+  # Placeholder for join and leave:
+  # - %player% > Player's name
+  join: "<gold>[</gold><green>+</green><gold>]</gold> <gray>%player%</gray>"
+  leave: "<gold>[</gold><red>-</red><gold>]</gold> <gray>%player%</gray>"
+  first-join: "<white>%player%</white> <gold>a rejoint le serveur pour la première fois !</gold>"
+
   fly-enabled: "<gold>Le vol est maintenant</gold> <green>activé</green> <gold>!</gold>"
   fly-disabled: "<gold>Le vol est maintenant</gold> <red>désactivé</red> <gold>!</gold>"
   enable-fly-other: "<gold>Le vol de</gold> <white>%player%</white> <gold>est maintenant</gold> <green>activé</green> <gold>!</gold>"
